@@ -1,0 +1,13 @@
+#TrustStorePassword=<< Existing password/certificate removed on export >>
+#
+#Tue Sep 18 14:53:15 UTC 2018
+Description=ViaCEP
+Type=HTTP
+Authentication=NoAuthentication
+WebIDEUsage=odata_abap,dev_abap, ui5_execute_abap,odata_xs,odata_gen
+Name=VIA_CEP
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://viacep.com.br/ws/
+TrustStoreLocation=viacep.cer
+WebIDESystem=CEP

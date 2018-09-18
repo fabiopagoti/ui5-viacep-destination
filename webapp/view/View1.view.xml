@@ -1,0 +1,18 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="alfaerp.viacep.controller.View1" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <SearchField placeholder="Digite o CEP" value="{view>/termoBusca}" maxLength="9" search="onSearch"/>
+				    <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" id="form0">
+				        <sap.ui.layout.form:content>
+				            <Label text="Endereço" id="label0"/>
+				            <Input width="100%" id="input0" value="{/logradouro}"/>
+				            <Label text="Estado" id="label1"/>
+				            <Input width="100%" id="input2" value="{/uf}"/></sap.ui.layout.form:content>
+				    </sap.ui.layout.form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
